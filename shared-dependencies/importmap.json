@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.0.0-beta.1/lib/system/single-spa.min.js",
+    "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js",
+    "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.1.5/dist/vue-router.min.js",
+
+    "@vue-mf/root-config": "http://localhost:9000/vue-mf-root-config.js",
+    "@vue-mf/styleguide": "http://localhost:8080/vue-mf-styleguide.js",
+    "@vue-mf/navbar": "https://localhost:8504/js/app.js",
+    "@vue-mf/footer": "https://localhost:8505/js/app.js",
+    "@vue-mf/example1": "https://localhost:8502/js/app.js",
+    "@vue-mf/example2": "https://localhost:8503/js/app.js",
+    
+    "@vue-mf/homescreen-magazine-cover": "https://localhost:8506/js/app.js"
+}
+}

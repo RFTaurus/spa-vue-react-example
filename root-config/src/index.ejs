@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lappland</title>
+
+  <!-- Favicon -->
+
+  <!-- Import Map for System Js -->
+  <meta name="importmap-type" content="systemjs-importmap" />
+
+  <!-- Use This For Production Purpose -->
+  <!-- <script type="systemjs-importmap" src="https://storage.googleapis.com/vue.microfrontends.app/importmap.json"></script> -->
+
+  <!-- Use This For Local Development Purpose -->
+  <% if (isLocal) { %>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@16.12.0/umd/react.production.min.js",
+        "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.1.5/dist/vue-router.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.12.0/umd/react-dom.production.min.js",
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.0.0-beta.1/lib/system/single-spa.min.js",
+    
+        "@vue-mf/root-config": "http://localhost:9000/vue-mf-root-config.js",
+        "@vue-mf/styleguide": "http://localhost:8080/vue-mf-styleguide.js",
+        "@vue-mf/vue-navbar": "https://localhost:8504/js/app.js",
+
+        "@vue-mf/vue-example-1": "https://localhost:8502/js/app.js",
+        "@vue-mf/vue-example-2": "https://localhost:8503/js/app.js",
+        "@vue-mf/vue-example-3": "https://localhost:8505/js/app.js",
+        
+        "@react-mf/react-example-1": "https://localhost:9001/react-mf-people.js",
+        "@react-mf/react-example-2": "https://localhost:9005/react-mf-api.js",
+        "@react-mf/react-example-3": "https://localhost:9008/react-mf-planets.js",
+        
+        "@vue-mf/vue-footer": "https://localhost:8507/js/app.js"
+      }
+    }
+  </script>
+  <% } %>
+
+  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.js"></script>
+</head>
+
+<body>
+  <script>
+    System.import('@vue-mf/styleguide');
+    System.import('@vue-mf/root-config');
+  </script>
+
+
+  <!-- Structure Start -->
+  <div id="lappland-navbar"></div>
+
+  <div>
+    <!-- Homescreen -->
+    <div id="lappland-home-cover"></div>
+    <div id="lappland-home-story"></div>
+    <div id="lappland-home-user"></div>
+
+    <!-- React -->
+    <div id="lappland-react"></div>
+
+    <!-- vue -->
+    <div id="lappland-vue"></div>
+  </div>
+
+  <div id="lappland-footer"></div>
+  <!-- Structure End -->
+
+  <!-- Comment this on Production -->
+  <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+
+</body>
+</html>

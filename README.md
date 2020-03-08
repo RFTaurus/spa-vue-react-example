@@ -1,8 +1,8 @@
 # spa-vue-react-example
-    This is an Example Project of Micro Frontend using Single-Spa, I make this structure for you so you can get a better understanding as how single-spa work when combining more than 1 frameworks, in this case vue and react
+ This is an Example Project of Micro Frontend using Single-Spa, I make this structure for you so you can get a better understanding as how single-spa work when combining more than 1 frameworks, in this case vue and react
 
 # Usage
-    You must try to run every project 1 at a time and I encourage you to start from root-config, this is the step I reccomended:
+ You must try to run every project 1 at a time and I encourage you to start from root-config, this is the step I reccomended:
     
     01. root-config : `yarn install` --> `yarn start`
 

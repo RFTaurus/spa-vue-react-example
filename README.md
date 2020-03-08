@@ -4,6 +4,7 @@
 # Usage
  You must try to run every project 1 at a time and I encourage you to start from root-config, this is the step I reccomended:
     
+    ```
     01. root-config : `yarn install` --> `yarn start`
 
     02. styleguide : `yarn install` --> `yarn start`
@@ -23,3 +24,4 @@
     09. react-example2 : `yarn install` --> `yarn start`
 
     10. react-example3 : `yarn install` --> `yarn start`
+    ```

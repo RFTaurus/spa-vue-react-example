@@ -25,3 +25,6 @@
 
  10. react-example3 : `yarn install` --> `yarn start`
  ```
+
+## Notes
+if you failed running point 3 & 4, you can try using npm install instead of yarn install, and if you stuck on some problem, mayb this comment can help you https://github.com/laravel-mix/laravel-mix/issues/2383#issuecomment-643265068
